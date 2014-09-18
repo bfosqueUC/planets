@@ -4,3 +4,4 @@ Wolfman
 and also a new line earlier
 But the mummy will appreciate the lack of humidity
 We removed the conflict on this line
+New line for a test
