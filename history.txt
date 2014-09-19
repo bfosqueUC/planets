@@ -1,0 +1,164 @@
+    1  ls
+    2  batman
+    3  cd
+    4  ls
+    5  batman
+    6  ls
+    7  cd users
+    8  cd ..
+    9  cd data/
+   10  ls
+   11  cd ..
+   12  ls
+   13  cd users/
+   14  ls
+   15  cd nelle
+   16  ls
+   17  cd north-pacific-gyre/
+   18  ls
+   19  cd 2
+   20  cd 2012-07-03/
+   21  ls
+   22  cd ..
+   23  cd ..
+   24  ls
+   25  cd data/
+   26  ls
+   27  cd pdb/
+   28  ls
+   29  cut --help
+   30  cut -d " " -f 2 camphene.pdb 
+   31  cut -d " " -f 3 camphene.pdb 
+   32  cut -d " " -f 4 camphene.pdb 
+   33  cut -d " " -f 1 camphene.pdb 
+   34  cut -d DELIM -f 1 camphene.pdb 
+   35  cut -d -f 1 camphene.pdb 
+   36  cut -d -f 1 camphene.pdb 
+   37  cut -f 1 camphene.pdb 
+   38  cut -f 2 camphene.pdb 
+   39  cut -d "   " -f 1 camphene.pdb 
+   40  cut -d "  " -f 1 camphene.pdb 
+   41  cut -d " " -f 1 camphene.pdb 
+   42  cut -d " " -f 1 camphene.pdb 
+   43  cut -d " " -f 5 camphene.pdb 
+   44  cut -d " " -f 6 camphene.pdb 
+   45  cut -d " " -f 7 camphene.pdb 
+   46  cut -d " " -f 1 camphene.pdb 
+   47  cut -d -f 1 camphene.pdb 
+   48  cut -f 1 camphene.pdb 
+   49  cut -f1 camphene.pdb 
+   50  cut -d " " -f 1 camphene.pdb 
+   51  grep "34" *
+   52  cut -d " " -f 1
+   53  grep "34" * | cut -d " " -f 1
+   54  grep "34" * | cut -d " " -f 1 \ uniq
+   55  grep "34" * | cut -d " " -f 1 | uniq
+   56  grep "34" * | cut -d ":" -f 1 | uniq
+   57  grep "34" * | cut -d ":" -f 1 | uniq
+   58  cat $(grep "34" * | cut -d ":" -f 1 | uniq
+   59  cat $(grep "34" * | cut -d ":" -f 1 | uniq)
+   60  cat $(grep "34" * | cut -d ":" -f 1 | uniq)
+   61  for filename in *; do grep "34" $filename | cut -d ":" -f 1 | uniq
+   62  for filename in *; do grep "34" $filename | cut -d ":" -f 1 | uniq; doe
+   63  for filename in *; do grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   64  for filename in *; do echo filenamne; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   65  for filename in *; do echo $filenamne; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   66  for filename in *; do echo $filename; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   67  for filename in *; do echo $filename; grep "34" $filename | cut -d " " -f 1 | uniq; done
+   68  for filename in *; do echo $filename "  "; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   69  for filename in *; do echo $filename "  " -n; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   70  echo --help
+   71  echo --help
+   72  for filename in *; do echo $filename -n; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   73  for filename in *; do echo -n $filename/ ; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   74  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d ":" -f 1 | uniq; done
+   75  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d "" -f 1 | uniq; done
+   76  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 1 | uniq; done
+   77  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " 6" -f 1 | uniq; done
+   78  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | uniq; done
+   79  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l; done
+   80  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l | sort -n; done
+   81  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l | sort -n; done
+   82  sort --help
+   83  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | sort -n; done
+   84  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l | sort -n; done
+   85  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l | sort -n $(wc -l); done
+   86  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l | sort -n $(wc -l$filename); done
+   87  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l | sort -n $(wc -l $filename); done
+   88  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l | sort; done
+   89  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l; done
+   90  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l; done
+   91  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l; done
+   92  for filename in *; do echo -n $filename\ ; grep "34" $filename | cut -d " " -f 6 | wc -l; done | sort -n
+   93  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l; done | sort -n
+   94  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l; done | sort -nr
+   95  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l; echo $filename; done | sort -nr
+   96  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l; echo $filename; done | sort -nr
+   97  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l; echo $filename -n; done | sort -nr
+   98  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l; echo -n $filename; done | sort -nr
+   99  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -ln; echo $filename; done | sort -nr
+  100  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | echo -n; echo $filename; done | sort -nr
+  101  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | echo -n; echo $filename; done | sort -nr
+  102  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | echo -n; echo $filename; done | sort -nr
+  103  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | echo -n
+  104  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | echo -n; done
+  105  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | cat -n; done
+  106  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | cat; done
+  107  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | cat -n; echo $filename; done | sort -nr
+  108  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | cat -n; echo $filename; done | sort -nr
+  109  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | cat -n; echo $filename; done
+  110  for filename in *; do grep "34" $filename | cut -d " " -f 6 | wc -l | cat -n; echo $filename; done
+  111  '
+  112  printf --help
+  113  printf
+  114  printf %s 
+  115  for filename in *; do printf %s $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo $filename; done
+  116  for filename in *; do printf %s $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo $filename; done | sort -n
+  117  for filename in *; do printf %s $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo $filename; done | sort -nr
+  118  for filename in *; do printf " " $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo $filename; done | sort -nr
+  119  for filename in *; do printf $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo $filename; done | sort -nr
+  120  for filename in *; do printf $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n " "; echo $filename; done | sort -nr
+  121  for filename in *; do printf $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n " "; echo $filename; done | sort -nr | cut -d " " -f 2
+  122  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n " "; echo $filename; done | sort -nr | cut -d " " -f 2
+  123  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n " "; echo $filename; done | sort -nr
+  124  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne \t; echo $filename; done | sort -nr
+  125  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne t; echo $filename; done | sort -nr
+  126  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n \t; echo $filename; done | sort -nr
+  127  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne \[t]; echo $filename; done | sort -nr
+  128  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n \[t]; echo $filename; done | sort -nr
+  129  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne '\[t]'; echo $filename; done | sort -nr
+  130  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne '[\t]'; echo $filename; done | sort -nr
+  131  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  132  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne \t; echo $filename; done | sort -nr
+  133  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n \t; echo $filename; done | sort -nr
+  134  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -n '\t'; echo $filename; done | sort -nr
+  135  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  136  for filename in *; do echo -n $(grep "34" $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr | cut -f 2
+  137  for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr | cut -f 2
+  138  for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  139  cat lanoxin
+  140  cat lanoxin.pdb 
+  141  for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  142  echo -e '# carbons\tfile; for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  143  echo -e '# carbons\tfile'; for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  144  echo -e '#C\tfile'; for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  145  echo -e '3 #C\tfile'; for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  146  echo -e '#C\tFile'; for filename in *; do echo -n $(grep " C " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  147  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "  C  " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  148  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "    C  " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  149  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "   C  " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  150  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "  C  " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  151  cat methane
+  152  cat methane.pdb 
+  153  cat lanoxin.pdb 
+  154  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "  C  " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  155  history > history.txt
+  156  cat history.txt 
+  157  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "  C  " $filename | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  158  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "  C  " $filename | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  159  cat lactose.pdb 
+  160  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "  C  " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  161  echo -e '#C\tFile'; for filename in *; do echo -n $(grep "  C  " $filename | cut -d " " -f 6 | wc -l); echo -ne '\t'; echo $filename; done | sort -nr
+  162  history
+  163  history > ~/planets
+  164  history > ~/planets/history.txt
